@@ -1,0 +1,3 @@
+S:\WorkFiles\Programming\Libraries\mingw64\bin\cmake.exe -E rm -f CMakeFiles\ThreadsCountingAssignment.dir/objects.a
+S:\WorkFiles\Programming\Libraries\mingw64\bin\ar.exe qc CMakeFiles\ThreadsCountingAssignment.dir/objects.a @CMakeFiles\ThreadsCountingAssignment.dir\objects1.rsp
+S:\WorkFiles\Programming\Libraries\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\ThreadsCountingAssignment.dir/objects.a -Wl,--no-whole-archive -o ThreadsCountingAssignment.exe -Wl,--out-implib,libThreadsCountingAssignment.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ThreadsCountingAssignment.dir\linkLibs.rsp

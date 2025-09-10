@@ -1,0 +1,14 @@
+[
+{
+  "directory": "S:/WorkFiles/Programming/ThreadsCountingAssignment/build",
+  "command": "S:\\WorkFiles\\Programming\\Libraries\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\ThreadsCountingAssignment.dir\\src\\main.cpp.obj -c S:\\WorkFiles\\Programming\\ThreadsCountingAssignment\\src\\main.cpp",
+  "file": "S:/WorkFiles/Programming/ThreadsCountingAssignment/src/main.cpp",
+  "output": "CMakeFiles/ThreadsCountingAssignment.dir/src/main.cpp.obj"
+},
+{
+  "directory": "S:/WorkFiles/Programming/ThreadsCountingAssignment/build",
+  "command": "S:\\WorkFiles\\Programming\\Libraries\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\ThreadsCountingAssignment.dir\\src\\thread.cpp.obj -c S:\\WorkFiles\\Programming\\ThreadsCountingAssignment\\src\\thread.cpp",
+  "file": "S:/WorkFiles/Programming/ThreadsCountingAssignment/src/thread.cpp",
+  "output": "CMakeFiles/ThreadsCountingAssignment.dir/src/thread.cpp.obj"
+}
+]
