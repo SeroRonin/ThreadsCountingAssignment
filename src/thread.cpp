@@ -1,34 +1,31 @@
+
 #include <iostream>
 #include <pthread.h>
+#include "thread.h"
 
-class Thread{
-    //underlying  thread
-    pthread_t thread;
-    int uid;
-    //should start?
-    bool started = false;
+void Thread::start()
+{
+    pthread_create(&thread, nullptr, threadLogic, this);
+}
 
-    //public:
-    //    Thread( int val = 0 ){
-    //        thread = newThread;
-    //        uid = val;
-    //    };
+void Thread::stop()
+{
+    pthread_cancel(thread);
+}
 
-    void start()
-    {
-        started = true;
-    }
-    
-    void stop()
-    {
-        started = false;
-    }
+int Thread::id(){
+    return uid;
+}
 
-    void done(){
+void Thread::run() {
+}
 
-    }
+void Thread::done() {
+}
 
-    int id(){
-        return uid;
-    }
-};
+void* Thread::threadLogic(void* arg) {
+    Thread* self = static_cast<Thread*>(arg);
+    self->run();
+    self->done();
+    return nullptr;
+}

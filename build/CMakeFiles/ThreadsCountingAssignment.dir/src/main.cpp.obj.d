@@ -147,4 +147,19 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/main.cpp.obj: \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ostream.tcc \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/istream \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/istream.tcc \
- S:\WorkFiles\Programming\ThreadsCountingAssignment\src\thread.h
+ S:\WorkFiles\Programming\ThreadsCountingAssignment\src\thread.h \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/thread \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/std_thread.h \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/this_thread_sleep.h \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/chrono.h \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ratio \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/cstdint \
+ S:/WorkFiles/Programming/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
+ S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/stdint.h \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/limits \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ctime \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/parse_numbers.h \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/mutex \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/std_mutex.h \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/unique_lock.h

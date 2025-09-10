@@ -146,4 +146,5 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/thread.cpp.obj: \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/basic_ios.tcc \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ostream.tcc \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/istream \
- S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/istream.tcc
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/istream.tcc \
+ S:\WorkFiles\Programming\ThreadsCountingAssignment\src\thread.h

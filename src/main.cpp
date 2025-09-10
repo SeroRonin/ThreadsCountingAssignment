@@ -1,79 +1,59 @@
 #include <iostream>
-#include "thread.h"
 #include <pthread.h>
+#include "thread.h"
+#include <thread>
+#include <mutex>
 
-const int THREADCOUNT = 1;
-const int NUMCOUNT = 100;
+int THREADCOUNT = 5;
+int NUMCOUNT = 1000;
 
+std::mutex count_mutex;
 int totalCount = 0;
 
-struct thread_args {
-    Thread* threadPtr;
-    int* countPtr;
-};
-
-void* countFunction(void* args){
-    thread_args* input = static_cast<thread_args*>(args);
-    Thread* threadInst = static_cast<Thread*>(input->threadPtr);
-    int* threadCounter = static_cast<int*>(input->countPtr);
-    int threadID = threadInst->uid;
-    std::cout << "Thread " << threadID << " is running.\n";
-    while (totalCount < NUMCOUNT && threadInst->started){
-        totalCount += 1;
-        (*threadCounter)++;
-        std::cout << "Thread " << threadID << " increasing count to " << (*threadCounter) << ", total: " << totalCount << "\n";
-    }
-    std::cout << "Thread " << threadID << " is done.\n";
-    std::cout << totalCount << "\n";
-    return nullptr;
+class CounterThread : public Thread {
+    public:
+        int selfCount = 0;
+        void run() override {
+            while(true){
+                std::lock_guard<std::mutex> lock(count_mutex);
+                if (totalCount >= NUMCOUNT){
+                    break;
+                }
+                totalCount++;
+                selfCount++;
+                //TODO replace with pthread instead of standard mutex and thread
+                std::this_thread::sleep_for(std::chrono::milliseconds(100/NUMCOUNT));
+            }
+        }
 };
 
 int main() {
-    //pthread_t threads[THREADCOUNT];
-    //int threadIDs[THREADCOUNT];
+    std::cout << "Enter Thread Count:";
+    std::cin >> THREADCOUNT;
 
-    //for (int i = 0; i < THREADCOUNT; ++i) {
-    //    threadIDs[i] = i;
-    //    if (pthread_create(&threads[i], nullptr, countFunction, &threadIDs[i]) != 0) {
-    //        std::cerr << "Error creating thread " << i << std::endl;
-    //    }
-    //}
-    
-    //for (int i = 0; i < THREADCOUNT; ++i) {
-    //    pthread_join(threads[i], nullptr);
-    //}
+    std::cout << "Enter Target Number:";
+    std::cin >> NUMCOUNT;
+    //TODO: Validate inputs
 
-    Thread threads[THREADCOUNT];
-    int threadIDs[THREADCOUNT];
-    int threadCounts[THREADCOUNT];
+
+    totalCount = 0;
+    CounterThread* threadObjs[THREADCOUNT];
     for (int i = 0; i < THREADCOUNT; ++i) {
-        Thread newThread = Thread();
-        newThread.uid = i;
-        threads[i] = newThread;
-        threadIDs[i] = i;
-        thread_args args = { 
-            .threadPtr = &newThread, 
-            .countPtr = &threadCounts[i]
-        };
-
-        if (pthread_create(&newThread.thread, nullptr, countFunction, &args) != 0) {
-           std::cerr << "Error creating thread " << i << std::endl;
-        }
-        else
-        {
-            std::cout << "Thread created: " << threads[i].uid << "\n";
-        }
-
-        newThread.started = true;
+        CounterThread* newThread = new CounterThread();
+        threadObjs[i] = newThread;
+        (*newThread).uid = i;
+        newThread->start();
     }
 
     for (int i = 0; i < THREADCOUNT; ++i) {
-        pthread_join(threads[i].thread, nullptr);
+        pthread_join(threadObjs[i]->thread, nullptr);
     }
 
     for (int i = 0; i < THREADCOUNT; ++i) {
-        std::cout << "Thread ID: " << threads[i].uid << "\n";
-    }
+        std::cout << "Thread [" << threadObjs[i]->id() << "] count:" << threadObjs[i]->selfCount << std::endl;
+    } 
+    std::cout << "Total count: " << totalCount << std::endl;
 
+    system("pause"); // Pauses the console until a key is pressed
     return 0;
 }

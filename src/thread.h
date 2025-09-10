@@ -1,13 +1,23 @@
+#pragma once
+#ifndef THREAD_H
+#define THREAD_H
+
 
 class Thread {
     public:
-    // Public members (accessible from outside the class)
         pthread_t thread;
         int uid;
+
         bool started;
-        //Thread( int val );
         void start();
         void stop();
-        void done();
+
+        virtual void run();
+        virtual void done();
+
         int id();
+
+        static void* threadLogic(void* arg);
 };
+
+#endif

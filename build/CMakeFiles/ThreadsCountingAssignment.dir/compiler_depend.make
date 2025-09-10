@@ -12,6 +12,7 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/main.cpp.obj: S:/WorkFiles/Programm
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/basic_string.tcc \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/char_traits.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/charconv.h \
+  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/chrono.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/concept_check.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
@@ -38,6 +39,7 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/main.cpp.obj: S:/WorkFiles/Programm
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ostream.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ostream.tcc \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
+  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/parse_numbers.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/postypes.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/predefined_ops.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ptr_traits.h \
@@ -45,6 +47,8 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/main.cpp.obj: S:/WorkFiles/Programm
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/refwrap.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/std_abs.h \
+  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/std_mutex.h \
+  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/std_thread.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_construct.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_function.h \
@@ -56,6 +60,9 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/main.cpp.obj: S:/WorkFiles/Programm
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/string_view.tcc \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stringfwd.h \
+  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/this_thread_sleep.h \
+  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/unique_lock.h \
+  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/utility.h \
@@ -65,8 +72,10 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/main.cpp.obj: S:/WorkFiles/Programm
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/clocale \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/concepts \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/cstddef \
+  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/cstdint \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/cstdio \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/cstdlib \
+  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ctime \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/cwchar \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/cwctype \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/debug/assertions.h \
@@ -82,15 +91,19 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/main.cpp.obj: S:/WorkFiles/Programm
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/iosfwd \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/iostream \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/istream \
+  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/limits \
+  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/mutex \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/new \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ostream \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
+  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ratio \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/stdexcept \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/stdlib.h \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/streambuf \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/string \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/string_view \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/system_error \
+  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/thread \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/tuple \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/type_traits \
   S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/typeinfo \
@@ -108,6 +121,7 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/main.cpp.obj: S:/WorkFiles/Programm
   S:/WorkFiles/Programming/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   S:/WorkFiles/Programming/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   S:/WorkFiles/Programming/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
+  S:/WorkFiles/Programming/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   S:/WorkFiles/Programming/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
   S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw.h \
   S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
@@ -140,6 +154,7 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/main.cpp.obj: S:/WorkFiles/Programm
   S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
   S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/signal.h \
   S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/stddef.h \
+  S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/stdint.h \
   S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/stdio.h \
   S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
@@ -298,7 +313,8 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/thread.cpp.obj: S:/WorkFiles/Progra
   S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/time.h \
   S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/vadefs.h \
   S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/wchar.h \
-  S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/wctype.h
+  S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/wctype.h \
+  S:/WorkFiles/Programming/ThreadsCountingAssignment/src/thread.h
 
 
 S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/wctype.h:
@@ -310,6 +326,8 @@ S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/sys/timeb.
 S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/swprintf.inl:
 
 S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/stdio.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/stdint.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/stddef.h:
 
@@ -331,7 +349,17 @@ S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/pthread_ti
 
 S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/pthread_compat.h:
 
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/version.h:
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/pthread.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/errno.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_algobase.h:
 
@@ -345,35 +373,37 @@ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/string_view.t
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/streambuf.tcc:
 
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ptr_traits.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h:
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/locale_facets.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/requires_hosted.h:
 
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/debug/assertions.h:
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/typeinfo:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/std_thread.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ostream.h:
 
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/debug/assertions.h:
+
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/locale.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/memory_resource.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/charconv.h:
 
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/std_mutex.h:
+
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/istream:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_construct.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/pthread.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/char_traits.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ios_base.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/process.h:
 
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/clocale:
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ios_base.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/parse_numbers.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
 
@@ -387,17 +417,17 @@ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/concept_check
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ext/numeric_traits.h:
 
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/ctype.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/std_abs.h:
+
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stringfwd.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/type_traits:
 
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/std_abs.h:
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/uses_allocator_args.h:
 
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/ctype.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/locale_facets.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/typeinfo:
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/memoryfwd.h:
 
@@ -407,7 +437,37 @@ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_function.
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/basic_string.h:
 
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ostream_insert.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/thread:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ptr_traits.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt_wctype.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/allocator.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/unique_lock.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_construct.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/char_traits.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/chrono.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ostream.tcc:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/exception.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ext/type_traits.h:
+
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ext/alloc_traits.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/unique_ptr.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/sys/types.h:
 
@@ -423,12 +483,6 @@ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/alloc_traits.
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h:
 
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/stdlib.h:
-
-S:/WorkFiles/Programming/ThreadsCountingAssignment/src/main.cpp:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bit:
-
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/backward/binders.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/functional_hash.h:
@@ -441,19 +495,21 @@ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/x86_64-w64-mingw32
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/hash_bytes.h:
 
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_iterator.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/locale_classes.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/basic_string.tcc:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/exception_defines.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/string:
+
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ostream.tcc:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/exception.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ext/type_traits.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/uses_allocator.h:
 
@@ -473,15 +529,17 @@ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/invoke.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/istream.tcc:
 
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_iterator.h:
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/stdlib.h:
 
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/locale_classes.h:
+S:/WorkFiles/Programming/ThreadsCountingAssignment/src/main.cpp:
 
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/basic_string.tcc:
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bit:
 
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/exception_defines.h:
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/this_thread_sleep.h:
 
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/string:
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/cstdint:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/version.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_pair.h:
 
@@ -500,6 +558,8 @@ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/cstddef:
 S:/WorkFiles/Programming/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/cstdlib:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ctime:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/cwchar:
 
@@ -521,13 +581,19 @@ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ios:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/initializer_list:
 
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/clocale:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/limits:
+
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/new:
 
 S:/WorkFiles/Programming/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h:
 
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/utility.h:
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ratio:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/range_access.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/utility.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/stdlib.h:
 
@@ -541,9 +607,9 @@ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/locale_facets
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/streambuf:
 
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/memory_resource.h:
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/_timeval.h:
 
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/locale.h:
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/string_view:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/system_error:
 
@@ -557,19 +623,21 @@ S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/crtdefs.h:
-
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h:
 
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/errno.h:
-
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/malloc.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
 
 S:/WorkFiles/Programming/ThreadsCountingAssignment/src/thread.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h:
+
+S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/mutex:
 
 S:/WorkFiles/Programming/Libraries/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h:
 
@@ -578,25 +646,3 @@ S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw_mac
 S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
 
 S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/string_view:
-
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/_timeval.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ostream_insert.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/allocator.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt_wctype.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
-
-S:/WorkFiles/Programming/Libraries/mingw64/x86_64-w64-mingw32/include/malloc.h:
