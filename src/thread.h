@@ -4,9 +4,13 @@
 
 
 class Thread {
-    public:
+    private:
         pthread_t thread;
         int uid;
+
+    public:
+        Thread();
+        ~Thread();
 
         bool started;
         void start();
@@ -15,6 +19,10 @@ class Thread {
         virtual void run();
         virtual void done();
 
+        void threadSet( pthread_t thread );
+        pthread_t threadGet();
+
+        void idSet( int idNew );
         int id();
 
         static void* threadLogic(void* arg);

@@ -1,56 +1,113 @@
 #include <iostream>
+#include <mutex>
+#include <vector>
+#include <numeric>
+#include <random>
+#include <algorithm>
+#include <thread>
 #include <pthread.h>
 #include "thread.h"
-#include <thread>
-#include <mutex>
 
 int THREADCOUNT = 5;
-int NUMCOUNT = 1000;
+int TARGETNUM = 1000;
 
 std::mutex count_mutex;
 int totalCount = 0;
 
 class CounterThread : public Thread {
     public:
+        int selfCountTarget = 0;
         int selfCount = 0;
         void run() override {
             while(true){
                 std::lock_guard<std::mutex> lock(count_mutex);
-                if (totalCount >= NUMCOUNT){
+                if (selfCount >= selfCountTarget || totalCount >= TARGETNUM){
                     break;
                 }
                 totalCount++;
                 selfCount++;
-                //TODO replace with pthread instead of standard mutex and thread
-                std::this_thread::sleep_for(std::chrono::milliseconds(100/NUMCOUNT));
             }
         }
 };
 
+std::vector<int> splitNumberIntoRandomParts(int numTotal, int splitCount) {
+    if (numTotal <= 0 || splitCount <= 0) {
+        return {};
+    }
+
+    if (splitCount == 1) {
+        return {numTotal};
+    }
+
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::vector<int> parts(splitCount);
+
+    if ( numTotal == 1 ) {
+        parts[0] = 1;
+        for (int i = 1; i < splitCount; ++i) {
+            parts[i] = 0;
+        }
+    }
+    else {
+        std::vector<int> splitPoint;
+        for (int i = 0; i < splitCount - 1; ++i) {
+            std::uniform_int_distribution<> distrib(1, numTotal - 1);
+            splitPoint.push_back(distrib(gen));
+        }
+
+        std::sort(splitPoint.begin(), splitPoint.end());
+
+        parts[0] = splitPoint[0];
+        for (int i = 1; i < splitCount - 1; ++i) {
+            parts[i] = splitPoint[i] - splitPoint[i-1];
+        }
+        parts[splitCount - 1] = numTotal - splitPoint[splitCount - 2];
+    }
+
+    std::shuffle(parts.begin(), parts.end(), gen);
+
+    return parts;
+}
+
+int getValidatedInt(const std::string& prompt) {
+    int value = 1;
+    while (true) {
+        std::cout << prompt;
+        std::cin >> value;
+
+        if (std::cin.fail() || value <= 0) {
+            std::cin.clear(); // clear error state
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Invalid input. Please enter a positive integer.\n";
+        } else {
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            return value;
+        }
+    }
+}
+
 int main() {
-    std::cout << "Enter Thread Count:";
-    std::cin >> THREADCOUNT;
-
-    std::cout << "Enter Target Number:";
-    std::cin >> NUMCOUNT;
-    //TODO: Validate inputs
-
+    THREADCOUNT = getValidatedInt("Enter Thread Count: ");
+    TARGETNUM = getValidatedInt("Enter Target Number: ");
 
     totalCount = 0;
+    std::vector<int> threadNumAssignments = splitNumberIntoRandomParts( TARGETNUM, THREADCOUNT );
     CounterThread* threadObjs[THREADCOUNT];
     for (int i = 0; i < THREADCOUNT; ++i) {
         CounterThread* newThread = new CounterThread();
         threadObjs[i] = newThread;
-        (*newThread).uid = i;
+        newThread->idSet(i);
+        newThread->selfCountTarget = threadNumAssignments[i];
         newThread->start();
     }
 
     for (int i = 0; i < THREADCOUNT; ++i) {
-        pthread_join(threadObjs[i]->thread, nullptr);
+        pthread_join(threadObjs[i]->threadGet(), nullptr);
     }
 
     for (int i = 0; i < THREADCOUNT; ++i) {
-        std::cout << "Thread [" << threadObjs[i]->id() << "] count:" << threadObjs[i]->selfCount << std::endl;
+        std::cout << "Thread [" << threadObjs[i]->id() << "]: Counted " << threadObjs[i]->selfCount << std::endl;
     } 
     std::cout << "Total count: " << totalCount << std::endl;
 

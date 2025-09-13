@@ -3,14 +3,27 @@
 #include <pthread.h>
 #include "thread.h"
 
-void Thread::start()
-{
+Thread:: Thread() {
+}
+
+Thread:: ~Thread() { 
+    stop();
+}
+
+pthread_t Thread::threadGet(){
+    return thread;
+}
+
+void Thread::start(){
     pthread_create(&thread, nullptr, threadLogic, this);
 }
 
-void Thread::stop()
-{
+void Thread::stop(){
     pthread_cancel(thread);
+}
+
+void Thread::idSet( int idNew){
+    uid = idNew;
 }
 
 int Thread::id(){
