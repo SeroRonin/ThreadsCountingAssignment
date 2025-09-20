@@ -3,13 +3,6 @@
 #include <pthread.h>
 #include "thread.h"
 
-Thread:: Thread() {
-}
-
-Thread:: ~Thread() { 
-    stop();
-}
-
 pthread_t Thread::threadGet(){
     return thread;
 }

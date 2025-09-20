@@ -9,9 +9,6 @@ class Thread {
         int uid;
 
     public:
-        Thread();
-        ~Thread();
-
         bool started;
         void start();
         void stop();

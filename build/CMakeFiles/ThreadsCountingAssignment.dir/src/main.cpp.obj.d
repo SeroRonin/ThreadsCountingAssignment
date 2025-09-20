@@ -147,11 +147,7 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/main.cpp.obj: \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/ostream.tcc \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/istream \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/istream.tcc \
- S:\WorkFiles\Programming\ThreadsCountingAssignment\src\thread.h \
- S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/thread \
- S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/std_thread.h \
- S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
- S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/this_thread_sleep.h \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/mutex \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/chrono.h \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ratio \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/cstdint \
@@ -160,7 +156,6 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/main.cpp.obj: \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/limits \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/ctime \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/parse_numbers.h \
- S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/mutex \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/std_mutex.h \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/unique_lock.h \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/vector \
@@ -197,4 +192,9 @@ CMakeFiles/ThreadsCountingAssignment.dir/src/main.cpp.obj: \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/algorithmfwd.h \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_heap.h \
  S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
- S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/thread \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/std_thread.h \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
+ S:/WorkFiles/Programming/Libraries/mingw64/include/c++/15.2.0/bits/this_thread_sleep.h \
+ S:\WorkFiles\Programming\ThreadsCountingAssignment\src\thread.h

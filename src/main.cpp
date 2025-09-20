@@ -77,11 +77,11 @@ int getValidatedInt(const std::string& prompt) {
         std::cin >> value;
 
         if (std::cin.fail() || value <= 0) {
-            std::cin.clear(); // clear error state
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cin.clear();
+            std::cin.ignore();
             std::cout << "Invalid input. Please enter a positive integer.\n";
         } else {
-            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cin.ignore();
             return value;
         }
     }
@@ -107,10 +107,15 @@ int main() {
     }
 
     for (int i = 0; i < THREADCOUNT; ++i) {
-        std::cout << "Thread [" << threadObjs[i]->id() << "]: Counted " << threadObjs[i]->selfCount << std::endl;
+        std::cout << "Thread " << threadObjs[i]->id() << " [" << threadObjs[i]->threadGet() << "]: Counted " << threadObjs[i]->selfCount << std::endl;
     } 
     std::cout << "Total count: " << totalCount << std::endl;
 
-    system("pause"); // Pauses the console until a key is pressed
+    for (int i = 0; i < THREADCOUNT; ++i) {
+        delete(threadObjs[i]);
+    }
+    
+    std::cout << "Program completed. Press enter to close the terminal" << std::endl;
+    std::cin.get();
     return 0;
 }
