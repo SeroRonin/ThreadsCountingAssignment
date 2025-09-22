@@ -1,3 +1,0 @@
-S:/WorkFiles/Programming/ThreadsCountingAssignment/build/CMakeFiles/ThreadsCountingAssignment.dir
-S:/WorkFiles/Programming/ThreadsCountingAssignment/build/CMakeFiles/edit_cache.dir
-S:/WorkFiles/Programming/ThreadsCountingAssignment/build/CMakeFiles/rebuild_cache.dir
